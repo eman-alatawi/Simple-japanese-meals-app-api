@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Simple-japanese-meals-app-api/static/css/main.d7110103.chunk.css",
+    "main.js": "/Simple-japanese-meals-app-api/static/js/main.1148529d.chunk.js",
+    "main.js.map": "/Simple-japanese-meals-app-api/static/js/main.1148529d.chunk.js.map",
+    "runtime-main.js": "/Simple-japanese-meals-app-api/static/js/runtime-main.a6f961af.js",
+    "runtime-main.js.map": "/Simple-japanese-meals-app-api/static/js/runtime-main.a6f961af.js.map",
+    "static/js/2.3c33002e.chunk.js": "/Simple-japanese-meals-app-api/static/js/2.3c33002e.chunk.js",
+    "static/js/2.3c33002e.chunk.js.map": "/Simple-japanese-meals-app-api/static/js/2.3c33002e.chunk.js.map",
+    "static/js/3.706fa94e.chunk.js": "/Simple-japanese-meals-app-api/static/js/3.706fa94e.chunk.js",
+    "static/js/3.706fa94e.chunk.js.map": "/Simple-japanese-meals-app-api/static/js/3.706fa94e.chunk.js.map",
+    "index.html": "/Simple-japanese-meals-app-api/index.html",
+    "static/css/main.d7110103.chunk.css.map": "/Simple-japanese-meals-app-api/static/css/main.d7110103.chunk.css.map",
+    "static/js/2.3c33002e.chunk.js.LICENSE.txt": "/Simple-japanese-meals-app-api/static/js/2.3c33002e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Simple-japanese-meals-app-api/static/media/FoodBanner.9d437df1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6f961af.js",
+    "static/js/2.3c33002e.chunk.js",
+    "static/css/main.d7110103.chunk.css",
+    "static/js/main.1148529d.chunk.js"
+  ]
+}
