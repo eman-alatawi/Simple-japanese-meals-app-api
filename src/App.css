@@ -1,38 +1,202 @@
-.App {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header-container {
+  margin-bottom: 3rem;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./FoodBanner.png"), -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: url("./FoodBanner.png"), linear-gradient(to right, #434343 0%, black 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.header-container h1 {
+  color: whitesmoke;
+}
+
+.meals-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  width: 100vw;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  width: 22rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.card .card-img {
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+          box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.card .card-title {
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3f3f3f), color-stop(150%, #1c1c1c)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  color: whitesmoke;
+  padding: 2rem;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer .iconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .iconsContainer .icon {
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+@media (max-width: 576px) {
+  .meals-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .card {
+    width: 15rem;
+  }
+  .card .card-img {
+    width: 13rem;
+  }
+  .card .card-title {
+    font-size: smaller;
+  }
+  .footer {
+    font-size: smaller;
   }
 }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .meals-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .card {
+    width: 15rem;
+  }
+  .card .card-img {
+    width: 13rem;
+  }
+  .card .card-title {
+    font-size: medium;
+  }
+  .footer {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .meals-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .card {
+    width: 22rem;
+  }
+  .card .card-img {
+    width: 20rem;
+  }
+  .card .card-title {
+    font-size: large;
+  }
+  .footer {
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=App.css.map */

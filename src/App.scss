@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+//Mixins
+@mixin flexContent($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin responsiveStyles($gridColumns, $cardwidth, $imgCardWidth, $fontSize) {
+  .meals-container {
+    grid-template-columns: $gridColumns;
+  }
+
+  .card {
+    width: $cardwidth;
+
+    .card-img {
+      width: $imgCardWidth;
+    }
+
+    .card-title {
+      font-size: $fontSize;
+    }
+  }
+
+  .footer {
+    font-size: $fontSize;
+  }
+}
+
+//Header.js
+.header-container {
+  margin-bottom: 3rem;
+  height: 50vh;
+  @include flexContent(row, center);
+  background-image: url("./FoodBanner.png"),
+    linear-gradient(to right, #434343 0%, black 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  h1 {
+    color: whitesmoke;
+  }
+}
+
+//MealsList.js
+.meals-container {
+  @include flexContent(row, center);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  width: 100vw;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+//MealCard.js
+.card {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  width: 22rem;
+  background-color: white;
+  padding: 1rem;
+
+  .card-img {
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .card-title {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+// Footer.js
+.footer {
+  @include flexContent(row, center);
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  color: whitesmoke;
+  padding: 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  .footerContainer {
+    @include flexContent(column, center);
+    height: 15vh;
+  }
+
+  .iconsContainer {
+    @include flexContent(row, space-between);
+
+    .icon {
+      color: whitesmoke;
+      margin: 1rem;
+    }
+  }
+}
+
+// Responsive.js
+@media (max-width: 576px) {
+  @include responsiveStyles(auto, 15rem, 13rem, smaller);
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  @include responsiveStyles(auto auto, 15rem, 13rem, medium);
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  @include responsiveStyles(auto auto, 22rem, 20rem, large);
+}
