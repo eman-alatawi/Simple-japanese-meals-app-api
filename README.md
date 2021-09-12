@@ -1,9 +1,15 @@
-# Simple Japanese Meals App using API
+# Fetch Meals - React App using API & Zustand State Management
 
-simple App to try fetching meals from [TheMealDB](https://www.themealdb.com/api.php) api and practice useState, useEffect hooks. Use react-bootstrap card. Styled using SCSS and it's responsive design.
+simple App for fetching meals from [TheMealDB](https://www.themealdb.com/api.php) api and practice  Zustand State Management Concept .
 
 ## App Screenshot
-![Website Screenshot](https://drive.google.com/uc?export=view&id=1aj_GhF6ePN6ZltgGKmW5q008-wEZEolw)
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1cOCQPR5rYmsJlnSYUJR1kRXk8nuyKH2Z)
+
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1TYMuPm_rcW6Sge7ln4bd4frghy5zDHOt)
+
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1-IjC_yNhKtiO8Bfn_qP-iB5OUjWmodUn)
+
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1KC4ePBrB5vtzzFHZ2mlMkOUiQ2NysgXo)
 
 ## Technologies Used
 
@@ -20,5 +26,6 @@ simple App to try fetching meals from [TheMealDB](https://www.themealdb.com/api.
 - Material-UI
   - @material-ui/core
   - @material-ui/icons
+- Zustand
 
 

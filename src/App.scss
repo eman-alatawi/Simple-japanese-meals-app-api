@@ -83,10 +83,13 @@ body {
     font-family: "Rajdhani", sans-serif !important;
     font-size: larger;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: rgb(85, 20, 20);
       color: whitesmoke;
     }
+
+    
+    
   }
 }
 .meals-container {

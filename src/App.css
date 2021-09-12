@@ -68,7 +68,7 @@ body {
   font-size: larger;
 }
 
-.categories-container button:hover {
+.categories-container button:hover, .categories-container button:focus {
   background-color: #551414;
   color: whitesmoke;
 }
